@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entrada</title>
+<link rel="shortcut icon" href="favicon.ico" type="img/Icono.png">
+</head>
+	<body bgcolor=#cdb4db>
+
+<style>
+.contenedor-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cuadro {
+  background-image: url('img/Entrada_cuadro.jpeg');
+
+  border: 1px solid black; 
+  padding: 20px; 
+  width: 300px;
+  margin: 0 auto; 
+}
+
+.resaltado {
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+}
+
+</style>
+
+<div class="cuadro">
+	<div class="contenedor-flex">
+ 	 <div class="elemento-centrado">
+
+
+
+    <h1>¡Bienvenido!</h1>
+
+    <p><span class="resaltado">Ingresa la_contraseña:</span></p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Entrar</button>
+
+    <script>
+        function checkPassword() {
+            const passwordInput = document.getElementById("password");
+            const contraseñaCorrecta = "la_contraseña"; // Reemplaza con tu contraseña
+            const paginaPrincipal = "index.html"; // Reemplaza con el nombre de tu página principal
+
+            if (passwordInput.value === contraseñaCorrecta) {
+                // Redirigir a la página principal
+                window.location.href = paginaPrincipal;
+            } else {
+                alert("Contraseña incorrecta. Intenta nuevamente.");
+            }
+        }
+    </script>
+    </div>
+</div>
+</div>
+</body>
+</html>
